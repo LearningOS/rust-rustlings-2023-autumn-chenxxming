@@ -1,22 +1,29 @@
 // quiz1.rs
-//
 // This is a quiz for the following sections:
 // - Variables
 // - Functions
 // - If
-//
+
 // Mary is buying apples. The price of an apple is calculated as follows:
 // - An apple costs 2 rustbucks.
 // - If Mary buys more than 40 apples, each apple only costs 1 rustbuck!
-// Write a function that calculates the price of an order of apples given the
-// quantity bought. No hints this time!
-//
-// No hints this time ;)
+// Write a function that calculates the price of an order of apples given
+// the quantity bought. No hints this time!
 
-// I AM NOT DONE
 
 // Put your function here!
 // fn calculate_price_of_apples {
+
+
+fn calculate_price_of_apples(price:i32) -> i32
+{
+    let mut price_temp = price * 2;
+    if(price<=40)
+    {
+    return price_temp;
+    }
+    return price;
+}
 
 // Don't modify this function!
 #[test]
@@ -31,3 +38,4 @@ fn verify_test() {
     assert_eq!(41, price3);
     assert_eq!(65, price4);
 }
+
